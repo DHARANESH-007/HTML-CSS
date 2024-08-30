@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial scale=1.0">
+  <title>Book survey</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">BOOK SURVEY FORM</h1>
+    <p id="description">Please share your thoughts by completing our survey.</p>
+    <div class="survey">
+      <main>
+        <form id="survey-form" method="post">
+          <fieldset>
+            <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+            <label for="number" id="number-label">Age: <input id="number" name="number" type="number" min="10" max="120" placeholder="Enter you age(in years)" required></label>
+              <h2> Gender:</h2>
+            <label for="male"><input type="radio" name="gender" id="male" class="inline" value="male" checked>Male</label>
+            <label for="female"><input type="radio" name="gender" id="female" value="female" class="inline">Female</label>
+            <label for="other"><input type="radio" name="gender" id="other" value="other" class="inline">Other</label>
+            <label for="dropdown">Where do you primarily acquire your books? <select class="drop" id="dropdown" name="refer">
+              <option value="" disabled selected>(Select one of these)</option>
+              <option value="1">BookStores</option>
+              <option value="2">Online retailers</option>
+              <option value="3">Libraries</option>
+              </select>
+              </label>
+              <h2>Your Favourite Genre?</h2>
+              <label for="fantasy"><input type="checkbox" id="fantasy" name="genre" value="fantasy" class="inline">Fantasy</label>
+              <label for="sci-fi"><input type="checkbox" id="sci-fi" name="genre" value="sci-fi" class="inline">Science Fiction</label>
+              <label for="mystery"><input type="checkbox" id="mystery" name="genre" value="mystery" class="inline">Mystery</label>
+              <label for="horror"><input type="checkbox" id="horror" name="genre" value="horror" class="inline">Horror</label>
+              <label for="tus"><input type="checkbox" id="tus" name="genre" value="tus" class="inline">Thriller & Suspense</label>
+              <label for="rom"><input type="checkbox" id="rom" name="genre" value="rom" class="inline">Romance</label>
+              <label for="bio"><input type="checkbox" id="bio" name="genre" value="bio" class="inline">Biography</label>
+              <label for="aa"><input type="checkbox" id="aa" name="genre" value="aa" class="inline">Action & Adventure</label>
+              <label for="comedy"><input type="checkbox" id="comedy" name="genre" value="comedy" class="inline">Comedy</label>
+              <label for="children"><input type="checkbox" id="children" name="genre" value="children" class="inline">Children's</label>
+              <label for="info">Which is your favourite book and why? <textarea id="info" name="info" rows:"3" cols:"30" placeholder="My favorite book is...."></textarea>
+          </fieldset>
+          <input id ="submit" class="button" type="submit" value="SUBMIT">
+        </form>
+        </div>
+        </main>
+  </body>
+  </html>
